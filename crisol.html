@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/favicmageia.ico" type="image/x-icon">
+    <title>Crisol | Mageia Imperatum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preload" href="css/modern-normalize.css" as="style">
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active boton-menu" aria-current="page" href="index.html"><img
+                                class="logomenu" src="imgs/logoMageiaT.gif" alt="'Logo A', animación abstracta danzante"
+                                title="Logo A" /></a>
+                        <a class="nav-link boton-menu" href="mercado.html"><i class="fi fi-rr-store-buyer"></i><i
+                                class="fi fi-rr-shopping-bag"></i></a>
+                        <a class="nav-link boton-menu" href="contacto.html"><i class="fi fi-brands-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="encabbg">
+                <div class="encab">
+                    <div class="cajaencab"><img class="logoa" src="imgs/logoMageiaT.gif"
+                            alt="'Logo A', animación abstracta danzante" title="Logo A" />
+                    </div>
+                    <div class="cajaencab">
+                        <div>
+                            <h1><i>Mageia Imperatum</i></h1>
+                        </div>
+                        <div>
+                            <h4>El portal donde las opciones no tienen límite.</h4>
+                        </div>
+                    </div>
+                    <div class="cajaencab"><img class="logob" src="imgs/cabamia.png"
+                            alt="'Logo B', silueta de águila coronada con filigrana de liz y pichones" title="Logo B" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="crisol-section">
+            <h2>crisol</h2>
+            <h3>estilo en accesorios</h3>
+
+            <div class="tienda">
+                <div class="tiendasub">
+                    <div class="tiendalista">
+                        <h3>Tienda virtual</h3>
+                        <div id="carrito"></div>
+                    </div>
+                    <div class="botoncart"><button id="btnPagar" class="cart pagar" onclick="pagar()"><i
+                                class="fi fi-rr-seller"></i>
+                            Comprar</button>
+                        <button id="btnLimpiar" class="cart vaciarbolsa" onclick="limpiarCarrito()"><i
+                                class="fi fi-rr-basket-shopping-minus"></i>
+                            Cancelar compra</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="crisol-items-centro">
+                <div class="crisol-item">
+                    <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-joyeria-a-tentaculos.jpg"
+                        alt="Imagen de producto" title="Tentáculos" />
+                    <div class="crisol-prod-txt">
+                        <p>anillo en plata sterling patinada, "Tentáculos" - $45000</p>
+                    </div>
+                    <div class="cierre">
+                        <div>
+                            <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                                alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                        </div>
+                        <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('Tentáculos', 45000)"
+                                class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="crisol-item">
+                    <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-joyeria-a-ouroboros.jpg"
+                        alt="Imagen de producto" title="Joyería B" />
+                    <div class="crisol-prod-txt">
+                        <p>anillo en plata sterling patinada, "Ouroboros" - $45000</p>
+                    </div>
+                    <div class="cierre">
+                        <div>
+                            <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                                alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                        </div>
+                        <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('Ouroboros', 45000)"
+                                class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="crisol-item">
+                    <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-joyeria-a-mamboreta.jpg"
+                        alt="Imagen de producto" title="Llavero A" />
+                    <div class="crisol-prod-txt">
+                        <p>pendiente / broche en bronce patinado y acero "Mamboretá" - $23000</p>
+                    </div>
+                    <div class="cierre">
+                        <div>
+                            <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                                alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                        </div>
+                        <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('Mamboretá', 23000)"
+                                class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="crisol-items-centro">
+                <div class="crisol-item">
+                    <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-llavero-b.jpg"
+                        alt="Imagen de producto" title="Llavero B" />
+                    <div class="crisol-prod-txt">
+                        <p>llavero de presilla en bronce ¨Aguilucho¨ - $14000</p>
+                    </div>
+                    <div class="cierre">
+                        <div>
+                            <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                                alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                        </div>
+                        <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('Aguilucho', 14000)"
+                                class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="crisol-item">
+                    <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-joyeria-b.jpg"
+                        alt="Imagen de producto" title="Joyería B" />
+                    <div class="crisol-prod-txt">
+                        <p>pendiente en bronce ¨Smaugh¨ - $18000</p>
+                    </div>
+                    <div class="cierre">
+                        <div>
+                            <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                                alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                        </div>
+                        <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('Smaugh', 18000)"
+                                class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="crisol-item">
+                    <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-llavero-a.jpg"
+                        alt="Imagen de producto" title="Llavero A" />
+                    <div class="crisol-prod-txt">
+                        <p>llavero de presilla en bronce ¨Violinista¨ - $15000</p>
+                    </div>
+                    <div class="cierre">
+                        <div>
+                            <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                                alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                        </div>
+                        <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('Violinista', 15000)"
+                                class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="crisol-item-largo">
+                <img class="crisol-prod-img" src="imgs/crisol-pexels-coppertist-wu-soporte-cel.jpg"
+                    alt="Imagen de producto" title="Soporte de celular" />
+                <div class="crisol-prod-txt">
+                    <p>accesorio de escritorio en bronce plateado/patinado, ¨King Cobra¨ - $65000
+                    </p>
+                </div>
+            </div>
+            <div class="cierre">
+                <div>
+                    <img class="img-cierre" src="imgs/flechaverde_Placidplace.gif"
+                        alt="Flecha verde animada señalando botón de compra" title="Flecha verde" />
+                </div>
+                <div class="botoncart"><button id="btnComprar" onclick="agregarProducto('King Cobra', 65000)"
+                        class="cart"><i class="fi fi-rr-shopping-bag-add"></i></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footerbg">
+        <div class="footergradient">
+            <div class=" disclaimer">
+                <p>Sitio realizado únicamente con fines educativos y de aprendizaje.</p>
+            </div>
+            <div class="footnav">
+                <div class="navfoot">
+                    <p>desarrollo: elmoteroloco</p>
+                </div>
+                <div class="navfoot"><b> · · </b></div>
+                <div class="navfoot">
+                    <p>2024 Mageia Imperatum.</p>
+                </div>
+            </div>
+            <div class="footredes">
+                <div class="link-gh"><a href="https://github.com"><i class="fi fi-brands-github"></i></a></div>
+                <div class="navfoot"><b> · · </b></div>
+                <div class="link-yt"><a href="https://www.youtube.com"><i class="fi fi-brands-youtube"></i></a>
+                </div>
+                <div class="navfoot"><b> · · </b></div>
+                <div class="link-pinterest"><a href="https://ar.pinterest.com"><i
+                            class="fi fi-brands-pinterest"></i></a>
+                </div>
+                <div class="navfoot"><b> · · </b></div>
+                <div class="link-devian"><a href="https://www.deviantart.com"><i class="fi fi-brands-devianart"></i></a>
+                </div>
+            </div>
+            <div class="listsep"></div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="javascript/venta.js"> </script>
+</body>
+
+</html>

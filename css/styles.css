@@ -1,0 +1,1081 @@
+:root {
+    --oscuro: rgba(0, 0, 0, 90%);
+    --claro: rgba(57, 82, 82, 90%);
+}
+
+/* ^^se agregó método alternativo para cumplir requisito de porcentaje en transparencias */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-family: Poppins, Verdana, Tahoma, Arial, sans-serif;
+}
+
+html {
+    font-size: 75%;
+}
+
+@media (width >= 600px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    background: linear-gradient(to right, rgb(2, 143, 143), rgb(202, 255, 255));
+    color: rgb(18, 24, 24);
+}
+
+/* Menu - Header */
+
+header {
+    position: sticky;
+    top: 1px;
+    z-index: 100;
+}
+
+.container-fluid {
+    background-color: rgb(2, 143, 143);
+    box-shadow: 1rem 0.1rem 1rem rgb(18, 24, 24);
+}
+
+.navbar-nav a {
+    padding: 1.6rem;
+    box-shadow: 1rem 0.1rem 1rem rgb(18, 24, 24);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-toggler-icon:hover {
+    background-color: rgb(29, 49, 49);
+}
+
+.boton-menu:hover {
+    background-color: rgb(29, 49, 49);
+}
+
+.fi-rr-store-buyer,
+.fi-rr-shopping-bag,
+.fi-brands-whatsapp,
+.fi-rr-edit {
+    font-weight: 700;
+    font-size: xx-large;
+    color: rgb(202, 255, 255);
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+}
+
+.fi-rr-shopping-bag {
+    padding-left: 0rem;
+    font-size: medium;
+}
+
+.fi-rr-square-info {
+    font-size: larger;
+}
+
+.info {
+    border: none;
+    background-color: rgb(214, 72, 29);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.logomenu {
+    width: 45px;
+    height: 45px;
+}
+
+/* Contenido */
+
+main {
+    padding: 0 0.35rem;
+}
+
+body h3 {
+    text-align: start;
+    padding: 0.5rem;
+    padding-top: 8rem;
+    color: rgb(18, 24, 24);
+}
+
+body p {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+/* Útiles */
+
+.l-simple {
+    width: 100%;
+    height: 0.1rem;
+    margin: 1rem 0;
+    background-color: rgb(18, 24, 24);
+}
+
+.listsep {
+    margin: 0.7rem 0;
+}
+
+.divisedit {
+    display: flex;
+    justify-content: center;
+}
+
+.divisedit img {
+    width: 33%;
+}
+
+/* Pseudo-Hero */
+
+.encabbg {
+    background-image: url("../imgs/hero_001.2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 175px;
+    position: relative;
+}
+
+.encab {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, var(--oscuro), var(--claro));
+    color: rgb(202, 255, 255);
+    border-radius: 0.3rem;
+}
+
+.cajaencab {
+    text-align: center;
+}
+
+.logoa {
+    width: 60%;
+}
+
+.logob {
+    width: 50%;
+}
+
+.encab h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+.encab h4 {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+@media (width >= 600px) {
+    .encab h1 {
+        font-size: 3.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .encab h4 {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+}
+
+@media (width >= 1024px) {
+    .encab h1 {
+        font-size: 4rem;
+    }
+
+    .encab h4 {
+        font-size: 2rem;
+    }
+}
+
+/* Navegación */
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin: 1rem;
+}
+
+.nav-list a {
+    font-weight: 700;
+    color: rgb(202, 255, 255);
+    transition: all 0.5s ease-in-out;
+}
+
+.buttonup {
+    margin-left: 75%;
+    padding: 2.5rem;
+    cursor: pointer;
+}
+
+.buttonup .irarriba {
+    color: rgba(18, 24, 24);
+    padding: 2rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(18, 24, 24, 30%);
+    font-size: x-large;
+    transition: all 0.5s ease-in-out;
+}
+
+.irarriba:hover {
+    color: rgb(202, 255, 255);
+    background-color: rgb(18, 24, 24);
+}
+
+@media (width <= 600px) {
+    .buttonup {
+        margin-left: 55%;
+    }
+
+    .buttonup .irarriba {
+        color: rgb(202, 255, 255);
+        background-color: rgb(18, 24, 24);
+        box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(29, 49, 49 30%);
+        padding: 0.5rem 5rem;
+        border-radius: 0.3rem;
+    }
+}
+
+.botonprods {
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.botonprods .al-landing {
+    color: rgb(18, 24, 24);
+    font-weight: 700;
+    font-size: x-large;
+    background-color: rgb(2, 143, 143);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(29, 49, 49 30%);
+    padding: 0 3rem;
+    padding-top: 1rem;
+    border-radius: 0.3rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.al-landing:hover {
+    color: rgb(202, 255, 255);
+    background-color: rgb(29, 49, 49);
+}
+
+.botoncart {
+    text-align: right;
+    padding: 0 3rem;
+    padding-top: 1rem;
+    border-radius: 0.3rem;
+}
+
+.botoncart button {
+    margin: 1rem 2rem;
+    padding: 1.5rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: rgb(18, 24, 24);
+    font-weight: 700;
+    font-size: xx-large;
+    background-color: rgb(202, 255, 255);
+    box-shadow: 0 0.4rem 0.8rem 0 rgb(0, 0, 0), 0 0.6rem 2rem 0 rgb(173, 173, 173);
+    transition: all 0.5s ease-in-out;
+}
+
+@media (width <= 600px) {
+    .botoncart {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.cart:hover {
+    color: rgb(202, 255, 255);
+    background-color: rgb(29, 49, 49);
+    transform: scale(1.1);
+}
+
+.botonformul {
+    display: flex;
+    flex-direction: column;
+}
+
+.botonsubres {
+    background-color: rgb(2, 143, 143);
+    color: rgb(18, 24, 24);
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgb(202, 255, 255);
+    padding: 1rem 3rem;
+    margin: 1rem auto;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.botonsubres:hover {
+    cursor: pointer;
+    color: rgb(202, 255, 255);
+    background-color: rgb(29, 49, 49);
+}
+
+@media (width >= 600px) {
+    .botonsubres {
+        width: auto;
+        margin-left: 70%;
+    }
+}
+
+/* Index */
+
+.cuerpo1 {
+    display: flex;
+}
+
+.c1img-left {
+    width: 15%;
+    height: 15%;
+    padding: 1.5rem;
+}
+
+.c1img-right {
+    width: 15%;
+    height: 15%;
+    padding: 1.5rem;
+}
+
+/* Trivia */
+
+.trivtitulo {
+    text-align: right;
+}
+
+.triviamain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.trivimg {
+    width: 30%;
+}
+
+.cajatrivia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.triv {
+    display: flex;
+    justify-content: center;
+}
+
+.trivnota {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (width >= 860px) {
+    .trivnota {
+        flex-direction: row;
+    }
+}
+
+/* Ludis */
+
+.ludis {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: 550;
+}
+
+/* Video */
+
+.showbox {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+@media (width >= 600px) {
+    .showbox {
+        width: 65%;
+    }
+}
+
+.centrarvid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.finale {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+@media (width >= 600px) {
+    .finale {
+        flex-direction: row;
+    }
+}
+
+/* Mercado */
+
+.resenhas h3 {
+    text-align: center;
+    margin-top: 2rem;
+    color: rgb(18, 24, 24);
+}
+
+.gridresenhas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+@media (width >= 600px) {
+    .gridresenhas {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+.card {
+    display: flex;
+    background-image: url("../imgs/hero_001.2.png");
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgb(0, 0, 0), 0 0.6rem 2rem 0 rgb(173, 173, 173);
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cardrese {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+@media (width >= 480px) {
+    .cardrese {
+        flex-direction: row;
+    }
+}
+
+.cardrese img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgb(0, 0, 0), 0 0.6rem 2rem 0 rgb(173, 173, 173);
+}
+
+.cardrese h3 {
+    text-align: left;
+    color: rgb(202, 255, 255);
+}
+
+.cardrese p {
+    text-align: left;
+    padding: 0.2rem;
+    color: rgb(202, 255, 255);
+}
+
+.cardconten .nom {
+    font-weight: 700;
+}
+
+.cardconten .opi {
+    font-style: italic;
+}
+
+.sectit-mercado {
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 1.6rem;
+}
+
+.prods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 0.75rem;
+    color: rgb(18, 24, 24);
+}
+
+.imgprod {
+    width: 65%;
+}
+
+.card-prods {
+    text-align: center;
+    width: 24rem;
+    background: rgb(0, 89, 89);
+    color: rgb(202, 255, 255);
+    padding: 0;
+    margin-bottom: 0.5;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgb(46, 46, 46), 0 0.6rem 2rem 0 rgb(173, 173, 173);
+    transition: all 0.5s ease-in-out;
+}
+
+.card-prods:hover {
+    transform: scale(1.3);
+}
+
+.card-prods p {
+    text-align: center;
+}
+
+.cajasprods {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+/* LandPages */
+
+/* Tienda */
+
+.tiendabg {
+    background-image: url("../imgs/hero_001.2.png");
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgb(0, 0, 0), 0 0.6rem 2rem 0 rgb(73, 73, 73);
+    transition: all 0.5s ease-in-out;
+}
+
+.tiendabg hr {
+    color: rgb(202, 255, 255);
+}
+
+.tienda {
+    display: flex;
+    justify-content: center;
+}
+
+.tiendasub {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (width >= 780px) {
+    .tiendasub {
+        flex-direction: row;
+    }
+}
+
+.tiendasub .botoncart {
+    padding-left: 20rem;
+    font-size: medium;
+}
+
+.botoncart .pagar,
+.botoncart .vaciarbolsa {
+    font-size: medium;
+}
+
+.botoncart p {
+    color: rgb(202, 255, 255);
+}
+
+@media (width <= 780px) {
+    .tiendasub .botoncart {
+        padding-left: 3rem;
+    }
+}
+
+.tiendalista h3 {
+    padding: 0.5rem;
+    text-align: center;
+    color: rgb(202, 255, 255);
+}
+
+.tiendalista p {
+    text-align: center;
+    padding: 0.2rem;
+    color: rgb(202, 255, 255);
+}
+
+.precierre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 0.5rem;
+    border: none;
+}
+
+@media (width <= 860px) {
+    .precierre {
+        flex-direction: column;
+    }
+}
+
+.precierre h3 {
+    margin: 0rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(202, 255, 255);
+}
+
+.cierre {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 0.5rem;
+    border: none;
+}
+
+.img-cierre {
+    width: 80%;
+    height: 80%;
+}
+
+@media (width >= 600px) {
+    .cierre {
+        flex-direction: row;
+    }
+}
+
+/* -Cthulhu */
+
+/* -Cthulhu II */
+
+.dungeon {
+    display: flex;
+    border: none;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgb(18, 24, 24);
+    margin: 0.5rem;
+}
+
+.cthulhu {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (width >= 860px) {
+    .cthulhu {
+        flex-direction: row;
+    }
+}
+
+.cthulhu p {
+    font-size: 1.5rem;
+    padding-top: 3.5rem;
+}
+
+.imgdungeon-a {
+    width: 40%;
+    height: 40%;
+    padding: 1rem;
+}
+
+.imgdungeon-b {
+    width: 40%;
+    height: 40%;
+    padding: 1rem;
+}
+
+@media (width <= 860px) {
+    .imgdungeon-a {
+        width: 90%;
+        height: 90%;
+    }
+
+    .imgdungeon-b {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+/* -Crisol */
+
+.crisol-section {
+    background-image: url("../imgs/crisol-pexels-crisol-a.jpg");
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+.crisol-section h2 {
+    color: rgb(255, 147, 0);
+    font-size: xxx-large;
+    font-family: Montserrat, "Arial Bold", Verdana, sans-serif;
+}
+
+.crisol-section h3 {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 4rem;
+    color: rgb(255, 147, 0);
+    font-size: large;
+    font-family: Montserrat, "Arial Bold", Verdana, sans-serif;
+}
+
+.crisol-prod-img {
+    width: 85%;
+    height: 85%;
+    transition: all 0.5s ease-in-out;
+}
+
+.crisol-prod-img:hover {
+    transform: scale(1.1);
+}
+
+.crisol-items-centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+}
+
+@media (width >= 600px) {
+    .crisol-items-centro {
+        flex-direction: row;
+    }
+}
+
+.crisol-prod-txt p {
+    color: rgb(255, 147, 0);
+    background-color: var(--oscuro);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* -Fun Play */
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d6481d' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d6481d' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.fplay {
+    background-image: url("../imgs/funplay-pexels-alexander-shustov-4476291.jpg");
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+/* ¡Fun play! */
+
+.funplayh2 {
+    text-align: center;
+    font-size: xxx-large;
+    font-family: Impact, "Arial Bold", Verdana, sans-serif;
+    color: rgb(214, 72, 29);
+    margin: 2.6rem;
+    border: 0.1rem solid rgb(18, 24, 24);
+    background: rgb(255, 149, 118);
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgb(214, 72, 29);
+}
+
+.container {
+    width: 70%;
+}
+
+.fplaylistbg {
+    display: flex;
+    margin: 2rem auto;
+}
+
+.fplaylist {
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.fplaylista {
+    padding-left: 1rem;
+}
+
+.fplaylistb {
+    padding-left: 2.5rem;
+}
+
+.fplayredes-conten {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2.6rem auto;
+    padding: 1rem;
+    background: rgb(255, 149, 118);
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(18, 24, 24);
+}
+
+.fplayredesbg {
+    background: rgb(214, 72, 29);
+    border: 1rem solid rgb(18, 24, 24);
+    border-radius: 0.5rem;
+}
+
+.fplayredes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.fplayredes a {
+    margin: 0 1rem;
+    color: rgb(18, 24, 24);
+    font-size: x-large;
+    align-items: center;
+    text-decoration-line: none;
+}
+
+/* Contacto - Localización */
+
+.local {
+    background-image: url("../imgs/hero_001.2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem;
+}
+
+.cajalocal {
+    margin: auto;
+    background: linear-gradient(to right, var(--oscuro), var(--claro));
+    color: rgb(202, 255, 255);
+    border: 0.1rem solid rgb(18, 24, 24);
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgb(18, 24, 24);
+    text-align: center;
+    width: min(80rem, 80%);
+}
+
+.donde-enco {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+@media (width >= 600px) {
+    .donde-enco {
+        flex-direction: row;
+    }
+}
+
+.donde-enco-box {
+    text-align: center;
+    font-size: medium;
+    padding: 0.5rem;
+}
+
+@media (width <= 600px) {
+    .donde-enco-box p {
+        font-size: small;
+    }
+}
+
+.showmap {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.showmap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0.3rem;
+}
+
+/* Contacto - Formulario */
+
+.formulario {
+    padding: 2rem;
+    background: linear-gradient(to right, var(--oscuro), var(--claro));
+}
+
+.formulbg {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    background-image: url("../imgs/hero_001.2.png");
+    color: rgb(202, 255, 255);
+    border: 0.1rem solid rgb(18, 24, 24);
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgb(18, 24, 24);
+
+    /* la función 'min' aplica el valor menor entre los posibles según pantalla */
+    width: min(80rem, 80%);
+}
+
+.contac,
+.contactop {
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactop {
+    font-size: xx-large;
+}
+
+.contacto fieldset {
+    border: none;
+}
+
+.datos {
+    border: none;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.cont-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+@media (width <= 768px) {
+    .cont-campos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (width >= 768px) {
+    .largo {
+        grid-column: 1 / span 2;
+    }
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-text {
+    width: 95%;
+    border: none;
+    background-color: rgb(202, 255, 255);
+    color: black;
+    padding: 1rem 0.2rem;
+    border-radius: 0.5rem;
+}
+
+/* Ventas Mageia */
+
+#detalle {
+    color: rgb(202, 255, 255);
+}
+
+/* Footer */
+
+.footerbg {
+    background-image: url("../imgs/hero_001.2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 110px;
+    position: relative;
+}
+
+.footergradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, var(--oscuro), var(--claro));
+    color: rgb(202, 255, 255);
+}
+
+.disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+}
+
+.footnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+}
+
+.footredes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.footredes a {
+    margin: 0 1rem;
+    color: rgb(202, 255, 255);
+    font-size: x-large;
+}
+
+.nav-list a:hover {
+    background: rgb(202, 255, 255);
+    color: rgb(29, 49, 49);
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+}
+
+.fplayredes a:hover {
+    color: rgb(202, 255, 255);
+}
+
+.footredes a:hover {
+    background: rgb(202, 255, 255);
+    color: rgb(29, 49, 49);
+    border-radius: 0.3rem;
+}
